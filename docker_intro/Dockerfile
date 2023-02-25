@@ -1,12 +1,12 @@
 FROM node:16-alpine
-docker run
+
 WORKDIR /frontend
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .d
+COPY . .
 
 EXPOSE 3000
 
